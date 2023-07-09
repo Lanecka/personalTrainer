@@ -6,37 +6,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jessica Taylor</title>
   <link rel="stylesheet" href="./css/style.css">
+  <!--Fontawesome Link for Icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <script src="./js/main.js" defer></script>
 </head>
 
 <body>
-  <div class="page">
-    <header class="header">
-      <nav class="navigation">
-        <ul class="navigation__list">
-          <li>
-            <a class="navigation__item" href="">Expertise</a>
-          </li>
-          <li>
-            <a class="navigation__item" href="">Services</a>
-          </li>
-          <li>
-            <a class="navigation__item" href="">Testimonials</a>
-          </li>
-          <li>
-            <a class="navigation__item navigation__item--last" href="">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header><!--End header-->
-
-    <main class="main">
+  <header class="header open">
+    <nav class="navbar">
+      <div class="container navbar__container">
+        <div class="navbar__wrap">
+          <div class="hamb">
+            <div class="hamb__field" id="hamb">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+          <ul class="menu" id="menu">
+            <li><a class="menu-link" href="#expertise">Expertise</a></li>
+            <li><a class="menu-link" href="#services">Services</a></li>
+            <li><a class="menu-link" href="#testimonials">Testimonials</a></li>
+            <li><a class="menu-link menu-link--last" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="popup" id="popup"></div>
+  <main class="main">
+    <div class="intro">
       <div class="logo">
         <h2 class="logo__title">Jessica Taylor</h2>
         <p class="logo__subtitle">PERSONAL TRAINER</p>
       </div>
-      <div class="intro">
-        <h1 class="intro__title">Unleash your potential</h1>
-        <p class="intro__subtitle">Push yourself to the limit with Jessica's expert guidance.</p>
+      <div class="major">
+        <h1 class="major__title">Unleash your potential</h1>
+        <p class="major__subtitle">Push yourself to the limit with Jessica's expert guidance.</p>
       </div>
       <div class="interaction">
         <button class="interaction__btn">Book Consultation</button>
@@ -44,9 +50,9 @@
           <img src="./img/icons/Down Arrow.svg" alt="arwow down">
         </a>
       </div>
-    </main><!--End header-->
+    </div>
 
-    <section class="section"> <!--expertise-->
+    <section class="section" id="expertise"> <!--expertise-->
       <div class="container">
         <div class="container__title">
           <h3>expertise</h3>
@@ -105,16 +111,110 @@
           <div class="training"><!--6-->
             <img class="training__img" src="./img/icons/Thunder.svg" alt="icon tsunder">
             <h2 class="training__title">
-              Pre and Postnatal Training 
+              Pre and Postnatal Training
             </h2>
             <div class="training__desc">
               Safe and effective workouts designed for pregnant or postpartum women.
             </div>
           </div>
-      </div>
+        </div>
     </section><!-- end expertise -->
 
-  </div>
+    <section class="section section--image" id="services"> <!--Services-->
+      <div class="container">
+        <div class="container__title">
+          <h3>Services</h3>
+        </div>
+        <div class="services">
+          <div class="services__desc">
+            <div class="block">
+              <p class="block__text">
+                Whether you're looking to lose weight, build muscle, improve your endurance,
+                or simply feel more confident and energized, I offer a variety of services to help you get there.
+              </p>
+              <p class="block__text">
+                From one-on-one sessions to group classes, my customized workout plans and personalized nutrition
+                guidance are designed to help you achieve your goals in a way that works for you.
+              </p>
+            </div>
+            <div class="interaction">
+              <button class="interaction__btn">Book Consultation</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!--end Services-->
+
+    <section class="section section--darkblue" id="testimonials"> <!--TESTIMONIALS-->
+      <div class="container">
+        <div class="container__title">
+          <h3>TESTIMONIALS</h3>
+        </div>
+        <div class="testimonials">
+
+          <div class="wrapper">
+            <i id="left" class="fa-solid fa-arrow-left"></i>
+            <ul class="carousel">
+              <li class="card">
+                <div class="card__comment">
+                  “Jessica's positive attitude and constant encouragement 
+                  have helped me push through my mental barriers and achieve 
+                  things I never thought possible. Through her patient 
+                  guidance and genuine care for my well-being, she has 
+                  helped me not only transform my body but also rediscover 
+                  my love for fitness and overall sense of self-confidence.”
+                </div>
+                <span>Emily P.</span>
+              </li>
+
+              <li class="card">
+                <div class="card__comment">
+                  “Jessica's positive attitude and constant encouragement 
+                  have helped me push through my mental barriers and achieve 
+                  things I never thought possible. Through her patient 
+                  guidance and genuine care for my well-being, she has 
+                  helped me not only transform my body but also rediscover 
+                  my love for fitness and overall sense of self-confidence.”
+                </div>
+                <span>Emily P2.</span>
+              </li>
+
+              <li class="card">
+                <div class="card__comment">
+                  “Jessica's positive attitude and constant encouragement 
+                  have helped me push through my mental barriers and achieve 
+                  things I never thought possible. Through her patient 
+                  guidance and genuine care for my well-being, she has 
+                  helped me not only transform my body but also rediscover 
+                  my love for fitness and overall sense of self-confidence.”
+                </div>
+                <span>Emily P3.</span>
+              </li>
+
+              <li class="card">
+                <div class="card__comment">
+                  “Jessica's positive attitude and constant encouragement 
+                  have helped me push through my mental barriers and achieve 
+                  things I never thought possible. Through her patient 
+                  guidance and genuine care for my well-being, she has 
+                  helped me not only transform my body but also rediscover 
+                  my love for fitness and overall sense of self-confidence.”
+                </div>
+                <span>Emily P4.</span>
+              </li>
+            </ul>
+            <i id="right" class="fa-solid fa-arrow-right"></i>
+
+
+          </div>
+          
+        </div>
+      </div>
+    </section><!--End TESTIMONIALS-->
+
+
+  </main>
+
 </body>
 
 </html>
